@@ -135,7 +135,6 @@ const render = () => {
   renderScore();
   renderBoard();
   renderPlayer();
-  console.log(state);
 };
 
 // *************** HAPPENS ON EVERY CLICK ***************
@@ -156,14 +155,12 @@ boardElem.addEventListener('click', (event) => {
   if (event.target.className !== 'cell') return;
 
   const squareIdx = event.target.dataset.index;
-  console.dir(event.target.dataset);
   checkBoard();
   takeTurn(squareIdx);
   render();
 });
 
 playerTurnElem.addEventListener('click', (event) => {
-  console.log('this is the event from playerTurnElem', event.target);
   if (event.target.className === 'restart') {
     resetState();
     render();
