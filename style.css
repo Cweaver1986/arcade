@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vh;
+}
+
+body {
+    background-color: rgb(233, 196, 106);
+    font-family: fantasy;
+    color: rgb(38, 70, 83);
+}
+
+h1 {
+    text-align: center;
+    width: 60vh;
+    font-size: 50px;
+    font-family: 'Ultra', serif;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16vh;
+    width: 20vh;
+    border: solid 2px;
+    font-size: 50px;
+}
+
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    border-bottom: none;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+    border-left: none;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+    border-right: none;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 55px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: 60vh;
+    font-size: 25px;
+}
+
+span {
+    margin-left: 5px;
+}
+
+input {
+    background-color: rgb(233, 196, 106);
+    font-size: 20px;
+    font-family: fantasy;
+    color: rgb(38, 70, 83);
+    border: none;
+}
+
+.player {
+    padding-left: 3px;
+}
+
+.playerscore {
+    display: flex;
+}
+
+.reset {
+    position: relative;
+    bottom: 30px;
+}
+
+button {
+    font-size: 18px;
+    font-family: fantasy;
+    color: rgb(38, 70, 83);
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20%;
+    padding-top: 5px;
+}
