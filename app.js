@@ -15,6 +15,7 @@ const resetState = () => {
 };
 
 const marks = ['X', 'O'];
+// winning combinations that'll we will later iterate through with checkBoard()
 const boardSectionChecks = [
 	[0, 1, 2],
 	[3, 4, 5],
@@ -160,6 +161,7 @@ boardElem.addEventListener('click', (event) => {
   render();
 });
 
+// adds player names to board
 playerTurnElem.addEventListener('click', (event) => {
   if (event.target.className === 'restart') {
     resetState();
@@ -170,7 +172,7 @@ playerTurnElem.addEventListener('click', (event) => {
     // get the value from the input
     const player1Value = player1Input.value;
     state.players[0] = player1Value;
-    //  Do the same thing for player2
+    // get the input from player 1
     const player2Input = document.querySelector('input[name=player2]');
     // get the value from the input
     const player2Value = player2Input.value;
