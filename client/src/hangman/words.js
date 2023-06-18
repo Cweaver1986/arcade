@@ -147,6 +147,7 @@ const words = [
   "quokka",
   "rain",
   "bear",
+  "laptop",
 ];
 
 export default words;
